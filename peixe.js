@@ -31,7 +31,7 @@ function create() {
 
     peixin = this.add.image(400, 300, 'peixe').setOrigin(400, 300).setFlip(true, false);
 }
-
+// tete
 function update() {
     
     //
