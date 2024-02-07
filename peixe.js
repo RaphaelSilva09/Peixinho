@@ -14,6 +14,10 @@ var config = {
 var game = new Phaser.Game(config);
 var peixin
 
+//tentativa falha de colocar texto na tela (1)
+var resposta = ('Durante a vida tive poucas chances de programar, e sempre com tarefas pequenas, sem nunca enteder a lógic por trás. Fico muito contente de saber que isso etpa mudando hoje!');
+
+
 function preload() {
     this.load.image('mar', 'assets/bg_azulescuro.png');
     this.load.image('logo', 'assets/logointeli_branco.png');
@@ -27,11 +31,15 @@ function preload() {
 function create() {
     this.add.image(400, 300, 'mar').setScale(2.2);
     this.add.image(150, 80, 'logo').setScale(0.75);
+    // não finalizei o peixe 2
     this.add.image(600, 80, 'peixin2').setScale(1);
+
+    //tentativa falha de colocar texto na tela (2)
+    document.write(resposta);
 
     peixin = this.add.image(400, 300, 'peixe').setOrigin(400, 300).setFlip(true, false);
 }
-// tete
+
 function update() {
     
     //
