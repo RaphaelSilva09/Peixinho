@@ -12,7 +12,7 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-var peixin
+var peixin;
 
 function preload() {
     this.load.image('mar', 'assets/bg_azulescuro.png');
@@ -25,7 +25,7 @@ function preload() {
 
 function create() {
     this.add.image(400, 300, 'mar').setScale(2.2);
-    this.add.image(150, 80, 'logo').setScale(0.75);
+    this.add.image(1070, 80, 'logo').setScale(0.75);
 
     peixin = this.add.image(400, 300, 'peixe').setOrigin(0.5, 0.5)
     peixin.setFlip(true, false);
